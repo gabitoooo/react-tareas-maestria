@@ -11,11 +11,10 @@ import "./assets/styles/Tasks.css";
 import Cookies from "js-cookie";
 import Swal from "sweetalert2";
 
-const API_URL = "http://192.168.0.99:3000/api";
+const API_URL = "https://tareasnode.onrender.com/api";
 const isLocal =
   window.location.hostname === "localhost" ||
   window.location.hostname.startsWith("192.168.");
-
 const Register = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
